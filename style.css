@@ -1,0 +1,756 @@
+ html, body {height: 100%; }
+ 
+ body {
+     background: #333;
+     min-height: 100vh; /* Altezza minima del viewport */
+ }
+
+ /*---------------------------------
+            GENERAL
+----------------------------------*/
+
+ .animate {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+ }
+
+ .button {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+ }
+
+ p {
+    line-height: 22px;
+ }
+
+ a {
+   color: #fff;
+ }
+
+ a:hover {
+   color: #fff;
+ }
+
+ .paragrafo-destra {
+   text-align: right;
+ }
+
+ /*---------------------------------
+            HEADER
+----------------------------------*/
+
+ .header {
+    background: #111;
+ }
+
+ .header__logo {
+    color: #fff;
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+ }
+
+ .header__menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+ }
+
+ .header__menu__item {
+    display: inline-block;
+    text-align: end;
+ }
+
+ .header__menu__item a {
+    color: #f3dcf1;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Francois One', sans-serif;
+ }
+
+ .header__menu__item a:hover {
+    background: #f3dcf1;
+    color: #000;
+ }
+
+ .header__icon-bar {
+    display: block;
+    float: right;
+    padding: 20px;
+    display: none;
+ }
+
+ .header__icon-bar span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin-bottom: 5px;
+ }
+
+ /*---------------------------------
+            COVER
+----------------------------------*/
+ .banner__cover {
+    height: auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    justify-content: center; /* Allinea orizzontalmente al centro */
+    align-items: center; /* Allinea verticalmente al centro */
+ }
+
+ .banner__cover img {
+   width: 35%;
+   background-color: #333;
+   height: auto;
+}
+
+ .banner__cover__copy {
+   width: 100%;
+ }
+
+ .banner__cover__copy__text {
+    display: table-cell;
+    vertical-align: middle;
+    color: #f3dcf1;
+    text-align: center;
+ }
+
+ .cover {
+   height: 30%;
+   width: 60%;
+   position: relative;
+   margin-left: 20%;
+   margin-right: 15%;
+   background-color: transparent;
+   margin-bottom: 5px;
+ }
+
+ .cover h1 {
+   font-family: 'Rampart One', cursive;
+   font-size: xx-large;
+   padding-left: 5px;
+   color: #f3dcf1;
+}
+
+ .cover1 {
+   height: auto;
+   width: 60%;
+   position: relative;
+   margin-left: 20%;
+   margin-right: 15%;
+   margin-top: 20px;
+   background-color: transparent;
+}
+
+.cover1 h1 {
+   font-family: 'Rampart One', cursive;
+   font-size: 50px;
+   padding-left: 5px;
+   color: #f3dcf1;
+}
+
+ .cover img {
+   max-width: 50%;
+   max-width: 50%;
+ }
+
+ .cover__filter {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+ }
+
+ .cover__caption {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+ }
+
+ .cover__caption__copy {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+ }
+
+ .cover--single {
+   height: 50%;
+ }
+
+ .cover--single h1{
+   font-size: 42px;
+ }
+
+ /*---------------------------------
+            CARDS
+----------------------------------*/
+
+ .cards {
+    max-width: 1200px;
+    margin: 40px auto;
+ }
+
+ .card {
+    width: 30%;
+    margin: 0 1.5%;
+    background: #fff;
+    float: left;
+ }
+
+ .card__image {
+    width: 100%;
+    height: auto;
+ }
+
+ .card__copy {
+    padding: 5px 20px;
+ }
+
+ .card__copy h3 {
+    margin-bottom: 0;
+ }
+
+/*---------------------------------
+            BANNER
+----------------------------------*/
+.banner {
+   height: auto;
+   background: #222;
+   padding: 20px;
+   border-radius: 60px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+}
+
+.banner1 {
+   height: auto;
+   background: #222;
+   padding: 20px;
+   border-radius: 60px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   margin-top: 0;
+}
+
+.banner img {
+   float: left;
+   margin: 20px 0 20px 20px; 
+   width: 35%;
+   border: #000;
+   border-radius: 60px;
+   background-color: #333;
+   height: auto;
+   margin-right: 25px;
+   margin-left: -10px;
+}
+
+.banner1 img {
+   float: right;
+   margin: 20px 0 20px 20px; 
+   width: 35%;
+   border: #000;
+   border-radius: 60px;
+   background-color: #333;
+   height: auto;
+}
+
+.banner__pdn1, .banner__pdn2 {
+   height: auto;
+   background: #222;
+   padding: 3px;
+   border-radius: 60px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   margin-top: 0;
+   margin-bottom: 30px;
+}
+
+.banner__pdn1 img, .banner__pdn2 img {
+   width: 35%;
+   border: #000;
+   border-radius: 60px;
+   background-color: #333;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.banner__pdn1 img {
+   float: left;
+   margin-right: 25px;
+}
+
+.banner__pdn2 img {
+   float: right;
+   margin-left: 25px;
+}
+
+.banner__pdn1:hover, .banner__pdn2:hover{
+   background: #111;
+}
+
+.banner__cs1, .banner__cs2, .banner__cs3 {
+   height: auto;
+   background: #222;
+   padding: 3px;
+   border-radius: 60px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   margin-top: 0;
+   margin-bottom: 30px;
+}
+
+.banner__cs1 img, .banner__cs3 img{
+   float: left;
+   width: 35%;
+   border: #000;
+   border-radius: 60px;
+   background-color: #333;
+   height: auto;
+   margin-right: 15px;
+   margin-bottom: 10px;
+}
+
+.banner__cs2 img {
+   float: right;
+   width: 35%;
+   border: #000;
+   border-radius: 60px;
+   background-color: #333;
+   height: auto;
+   margin-left: 15px;
+   margin-bottom: 10px;
+}
+
+.banner__copy {
+    padding: 20px;
+}
+
+.banner1__copy {
+    padding: 20px;
+}
+
+.banner__copy__text, .banner__copy__text1, .banner1__copy__text {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+    color: #f3dcf1;
+}
+
+.banner__copy__text h3, .banner__copy__text1 h3, .banner1__copy__text h3 {
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.banner__copy__text h4 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.banner__copy__text p, .banner1__copy__text p {
+   font-family: 'Francois One', sans-serif;
+   font-size: 25px;
+   line-height: 30px;
+}
+
+.banner__copy__text1 p {
+   font-family: 'Francois One', sans-serif;
+   font-size: 20px;
+   line-height: 30px;
+   padding: 20px;
+}
+
+/*---------------------------------
+            CARTINA
+----------------------------------*/
+@media (min-width: 1367px){
+   .cartina {
+      height: 70%;
+      width: 100%;
+      position: relative;
+      padding: 20px;
+   }
+   
+   .cartina__img img{
+      position: absolute;
+      float: left;
+      width: 47%;
+      height: auto;
+      left: 22%;
+      top: 53%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+   } 
+
+   .pulsanti_paesi,
+   .pulsanti_paesi button,
+   .immagine,
+   .immagine_cartina img {
+      display: none;
+      height: 0;
+      max-height: 0;
+      overflow: hidden;
+   }
+
+}
+
+.Vallerano, .Fabrica_di_Roma, .Vignanello, .Orte, .Carbognano, .Montefiascone, .Corchiano {
+   position: absolute;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   cursor: pointer;
+   background-image: url(Immagini/mosca_con_contorni.png);
+   background-size: cover;
+   background-color: transparent;
+   border: none;
+   width: 40px;
+   height: 40px;
+}
+
+.Vallerano {
+   top: 61%;
+   left: 32%;
+ }
+
+ .Fabrica_di_Roma {
+   top: 71%;
+   left: 35%;
+ }
+
+ .Vignanello {
+   top: 66%;
+   left: 34%;
+ }
+
+ .Orte {
+   top: 55%;
+   left: 37%;
+ }
+
+ .Carbognano {
+   top: 76%;
+   left: 34%;
+ }
+
+ .Montefiascone {
+   top: 46%;
+   left: 24%;
+ }
+
+ .Corchiano {
+   top: 69%;
+   left: 37%;
+ }
+
+ .Vallerano:hover, .Fabrica_di_Roma:hover, .Vignanello:hover, .Orte:hover, .Carbognano:hover, .Montefiascone:hover, .Corchiano:hover {
+   display: block;
+   width: auto;
+   height: auto;
+   background-image: none;
+   background-color: #000;
+   color: #f3dcf1;
+   border-radius: 10px;
+   border-color: #f3dcf1;
+   border-style: double;
+   z-index: 1;
+ }
+
+ .Vallerano:hover::after {
+   content: "Vallerano";
+ }
+
+ .Fabrica_di_Roma:hover::after {
+   content: "Fabrica di Roma";
+ }
+
+ .Vignanello:hover::after {
+   content: "Vignanello";
+ }
+
+ .Orte:hover::after {
+   content: "Orte";
+ }
+
+ .Carbognano:hover::after {
+   content: "Carbognano";
+ }
+
+ .Montefiascone:hover::after {
+   content: "Montefiascone";
+ }
+
+ .Corchiano:hover::after {
+   content: "Corchiano";
+ }
+
+ .spiegazione {
+   width: 45%;
+   float: right;
+   margin-right: 2%;
+   margin-top: 2%;
+   display: none;
+   background-color: #f3dcf1;
+   padding: 20px;
+   text-align: center;
+   border-radius: 50px;
+ }
+
+ .spiegazione {
+   display: block;
+ }
+
+ .vallerano_testo, .fabrica_testo, .vignanello_testo, .orte_testo, .carbognano_testo, .montefiascone_testo, .corchiano_testo {
+   width: 80%;
+   margin-top: 7%;
+   display: none;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #f3dcf1;
+   text-align: center;
+   padding: 20px;
+   border-radius: 50px;
+ }
+
+ .spiegazione p, .vallerano_testo p, .fabrica_testo p, .vignanello_testo p, .orte_testo p, .carbognano_testo p, .montefiascone_testo p, .corchiano_testo p {
+   font-family: 'Francois One', sans-serif;
+   font-size: 20px;
+   text-align: left;
+ }
+
+ .spiegazione h3, .vallerano_testo h3, .fabrica_testo h3, .vignanello_testo h3, .orte_testo h3, .carbognano_testo h3, .montefiascone_testo h3, .corchiano_testo h3 {
+   font-family: 'Rampart One', cursive;
+   font-size: 35px;
+ }
+
+/*---------------------------------
+            PULSANTI PAESI
+----------------------------------*/
+
+ .pulsanti_paesi {
+   width: auto;
+   height: 40%;
+   max-width: 95%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: flex-start;
+   margin-top: 10%;
+ }
+
+ .pulsanti_paesi button {
+   margin: 5px;
+   font-family: 'Francois One', sans-serif;
+   font-size: 30px;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+   color: #000;
+   background-color: #f3dcf1;
+   box-shadow: 10px 14px 18px rgba(0, 0, 0, 1);
+   padding: 10px 20px;
+   text-decoration: underline;
+   max-width: calc(50% - 5px);
+ }
+
+.immagine {
+   width: 100%;
+   max-width: 100%;
+   overflow: hidden;
+   margin-top: 40px;
+}
+
+ .immagine_cartina img {
+   width: 50%;
+   height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+/*---------------------------------
+            FOOTER
+----------------------------------*/
+
+.footer {
+   display: flex;
+   background: #222;
+   padding: 30px;
+   color: #fff;
+   margin-top: 60px;
+   align-items: center;
+   justify-content: space-between;
+   height: auto;
+}
+
+.footer p1 {
+   color: #666666;
+}
+
+.email {
+   height: 100%;
+   max-width: 30%;
+   font-size: 20px;
+   font-family: 'Francois One', sans-serif;
+   margin-right: auto;
+}
+.social {
+   max-width: 60%;
+   height: 100%;
+   margin-right: auto;
+   margin-left: auto;
+}
+.social-icons {
+   list-style: none;
+   width: 40%;
+   display: flex;
+}
+.social-icons li {
+   padding: 20px;
+}
+ 
+ 
+
+/*---------------------------------
+            SINGLE
+----------------------------------*/
+
+.single {
+   background: #eee;
+}
+
+.single__copy {
+   max-width: 800px;
+   margin: 0px auto;
+   margin-top: -60px;
+   background: #fff;
+   padding: 20px 40px;
+   position: relative;
+   z-index: 1;
+}
+
+.single__copy__meta {
+   font-weight: bold;
+   font-size: 18px;
+   font-style: italic;
+}
+
+.single__copy__title {
+   font-size: 32px;
+}
+
+/*---------------------------------
+            TABLET
+----------------------------------*/
+ @media only screen and (max-width: 1366px){
+    .cartina{display: none;}
+
+    .header{position: fixed; z-index: 100; width: 100%; top: 0;}
+    .header__icon-bar{display: block;}
+
+    .header__menu{width: 100%; height: 0px; overflow: hidden;}
+    .header__menu__item{display: block;}
+    .is-open{height: 300px; overflow: auto;}
+
+    .banner__cover {margin-top: 70px;}
+    .cover1 {margin-top: 70px;}
+
+    .pulsanti_paesi {margin-left: 30px; margin-right: 30px;}
+    .pulsanti_paesi button {margin: 15px; padding: 15px 20px 15px 20px;}
+ }
+
+ /*---------------------------------
+            SMARTPHONE
+----------------------------------*/
+@media only screen and (max-width: 768px) {
+
+    .cartina{display: none;}
+
+    .header{position: fixed; z-index: 100; width: 100%; top: 0;}
+    .header__icon-bar{display: block;}
+
+    .header__menu{width: 100%; height: 0px; overflow: hidden;}
+    .header__menu__item{display: block;}
+    .is-open{height: 300px; overflow: auto;}
+
+    /* Cover */
+    .banner__cover {margin-top: 75px;}
+
+    .cover1 {margin-top: 70px;}
+    .cover1 h1 {font-size: 35px;}
+
+    /* Cards */
+    .card {width: 90%; margin: 5%;}
+
+    /* Banner */
+    .banner h3, .banner1 h3 {font-size: 22px;}
+    .banner p, .banner1 p {font-size: 16px; line-height: 1.2;}
+    .banner img, .banner1 img {border-radius: 20px;}
+    .banner__copy {margin-left: -30px;}
+    .banner1__copy {margin-left: -30px;}
+
+    .banner__cs1 img, .banner__cs2 img, .banner__cs3 img {margin-bottom: 5px;}
+    .banner__cs1 .banner__copy, .banner__cs2 .banner__copy, .banner__cs3 .banner__copy {padding: 0; padding-top: 10px; margin-left: -30px;}
+    .banner__cs1 h3, .banner__cs2 h3, .banner__cs3 h3 {font-size: 22px; margin-left: 12px;}
+    .banner__cs1 p, .banner__cs2 p, .banner__cs3 p {font-size: 16px; line-height: 1.2;}
+
+    .banner__pdn1 h3, .banner__pdn2 h3 {font-size: 22px;}
+    .banner__pdn1 p, .banner__pdn2 p {font-size: 16px; line-height: 1.2;}
+
+    .footer p1, .footer p {font-size: 12px;}
+    .social {margin-left: 10px; margin-right: 10px;}
+    .social-icons li {padding: 5px;}
+
+    .pulsanti_paesi {margin-left: 20px; margin-right: 20px;}
+    .pulsanti_paesi button {font-size: 16px; margin: 5px;}
+
+    .spiegazione p, .vallerano_testo p, .fabrica_testo p, .vignanello_testo p, .orte_testo p, .carbognano_testo p, .montefiascone_testo p, .corchiano_testo p {font-size: 16px; line-height: 1.2;}
+   
+    .spiegazione h3, .vallerano_testo h3, .fabrica_testo h3, .vignanello_testo h3, .orte_testo h3, .carbognano_testo h3, .montefiascone_testo h3, .corchiano_testo h3 {font-size: 25px;}
+
+}
+
+ .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+ }
+ * html.clearfix                {zoom: 1;} /* IE6 */
+ *:first-child+html .clearfix   {zoom: 1;} /* IE7 */
+
+ *,
+ *:before,
+ *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+

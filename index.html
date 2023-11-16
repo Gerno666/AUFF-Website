@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>AUFF</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Rampart+One&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="/Immagini/mosca_con_contorni.png" type="image/png">
+        <link rel="shortcut icon" href="/Immagini/mosca_con_contorni.png" type="png">
+    </head>
+
+    <body>
+
+        <header class="header clearfix">
+            <a href="index.html" class="header__logo"><img src="Immagini/mosca_con_contorni.png" height="50px" width="50px" alt="Logo"></a>
+            <a href="" class="header__icon-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="header__menu animate">
+                <li class="header__menu__item"><a href="index.html">Home</a></li>
+                <li class="header__menu__item"><a href="chi_siamo.html">Chi siamo</a></li>
+                <li class="header__menu__item"><a href="eventi.html">Eventi</a></li>
+                <li class="header__menu__item"><a href="parlano_di_noi.html">Parlano di noi</a></li>
+            </ul>
+        </header>
+
+        <section class="banner__cover clearfix">
+            <div class="banner__cover__copy">
+                <div class="banner__cover__copy__text">
+                    <img src="Immagini/logo_2_senzasfondo.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="banner clearfix">
+            <div class="banner__copy">
+                <div class="banner__copy__text">
+                    <img src="Immagini/collage.png">
+                    <h3>AUFF</h3>
+                    <p>AUFF è lo sbuffo dei giovani che hanno troppe idee e pochi spazi per la cultura, distratti spesso dallo svolazzare delle mosche fastidiose.</p>
+                    <p>AUFF associazione giovanile culturale nasce nel 2023 a seguito della vittoria del bando “Vitamina G2” promosso dalla regione Lazio in collaborazione con Generazioni Giovani.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner1 clearfix">
+            <div class="banner1__copy">
+                <div class="banner1__copy__text">
+                    <img src="Immagini/1.jpeg">
+                    <h3>IL CANTO DEGLI INVISIBILI</h3>
+                    <p>Dall’incontro tra due giovani compositori-musicisti con uno degli archivista dell’Archivio storico
+                        della Diocesi di Civita Castellana, è nata l’idea di valorizzare gli spartiti musicali (manoscritti e/o a
+                        stampa) conservati nei fondi dell’Archivio Storico della Diocesi comprendente il territorio di circa
+                        40 Comuni delle province di Viterbo e Roma. Una terra piena di storie e ricca di suoni che provoca
+                        un rumore assordante. Qui, dove le storie si fondono ai suoni, nasce la poesia, la poesia di una
+                        terra di grandi famiglie (gli Anguillara, gli Orsini, i Farnese) ma una terra anche di povera gente che
+                        ha vissuto all’ombra dei maestosi castelli e palazzi costruiti da questi nobili casati. Una terra di
+                        santi e peccatori, di nobili e contadini, la cui storia precede la fondazione
+                        della stessa Roma. Un luogo dove la simbologia e la spiritualità si confrontano con la magia e la
+                        ritualità. Dall’incontro di storia umana e del Divino nasce “Il Canto degli Invisibili”</p>
+                    <p>Il progetto si propone di riportare alla luce e valorizzare sia il repertorio di musica sacra del
+                        periodo barocco proveniente dal territorio della Tuscia sia la storia spesso dimenticata di coloro
+                        che nei secoli passati ci hanno preceduto. Solo a titolo esemplificativo, si pensi alla badessa
+                        Maria Cecilia Baij (1694-1766), morta in odore di santità, per la quale da qualche mese è stato
+                        aperto anche il processo di beatificazione, o all’arciprete di Carbognano don Gaetano Ciccolini,
+                        autore di un considerevole numero di prediche e catechismi tuttora inediti, ma anche alle
+                        credenze magiche e superstiziose che sono emerse dai documenti e che in alcuni casi estremi
+                        hanno portato a dei veri e propri processi per stregoneria.</p>
+                    <p>Il connubio tra l’estetica musicale antica e la tradizione storiografica ci ha permesso di conoscere
+                        la storia dei luoghi su cui ogni giorno camminiamo; luoghi che frequentiamo e viviamo nella
+                        quotidianità. Crediamo che le vecchie storie e la musica, che per un lungo periodo hanno dato un
+                        colore alla nostra terra vadano riscoperte, apprezzate e condivise e non abbandonate sugli
+                        scaffali degli archivi o nelle sagrestie.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="email">
+                <p>Contattaci: <a href="mailto:auffassociazione@gmail.com">auffassociazione@gmail.com</a></p>
+            </div>
+            <div class="social">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=100092238420290" target="_blank"><img src="Immagini/facebook.png" width="50" height="50" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/auffassociazione?igshid=YmMyMTA2M2Y=" target="_blank"><img src="Immagini/instagram.png" width="50" height="50" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <p1>Copyright 2023 - AUFF</p1>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <script>
+            $(document).ready(function(){
+
+                $(".header__icon-bar").click(function(e){
+
+                    $(".header__menu").toggleClass('is-open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    </body>
+</html>
