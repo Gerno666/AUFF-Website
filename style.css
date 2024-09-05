@@ -253,6 +253,16 @@
    margin-top: 0;
 }
 
+.banner2 {
+   height: auto;
+   background: #222;
+   padding: 20px;
+   border-radius: 60px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+}
+
 .banner img {
    float: left;
    margin: 20px 0 20px 20px; 
@@ -273,6 +283,22 @@
    border-radius: 60px;
    background-color: #333;
    height: auto;
+}
+
+.banner2 img {
+   float: left;
+   margin: 20px 0 20px 20px; 
+   width: 35%;
+   border: #000;
+   border-radius: 60px;
+   background-color: #333;
+   height: auto;
+   margin-right: 25px;
+   margin-left: -10px;
+}
+
+.banner2:hover {
+   background: #111; /* Colore di sfondo nero quando si passa sopra */
 }
 
 .banner__pdn1, .banner__pdn2 {
@@ -352,14 +378,18 @@
     padding: 20px;
 }
 
-.banner__copy__text, .banner__copy__text1, .banner1__copy__text {
+.banner2__copy {
+   padding: 20px;
+}
+
+.banner__copy__text, .banner__copy__text1, .banner1__copy__text, .banner2__copy__text {
     display: table-cell;
     vertical-align: middle;
     padding-left: 40px;
     color: #f3dcf1;
 }
 
-.banner__copy__text h3, .banner__copy__text1 h3, .banner1__copy__text h3 {
+.banner__copy__text h3, .banner__copy__text1 h3, .banner1__copy__text h3, .banner2__copy__text h3{
     font-family: 'Rampart One', cursive;
     font-size: 50px;
     padding-left: 5px;
@@ -372,7 +402,7 @@
     margin: 5px 0;
 }
 
-.banner__copy__text p, .banner1__copy__text p {
+.banner__copy__text p, .banner1__copy__text p, .banner2__copy__text p{
    font-family: 'Francois One', sans-serif;
    font-size: 25px;
    line-height: 30px;
@@ -415,6 +445,10 @@
       height: 0;
       max-height: 0;
       overflow: hidden;
+   }
+
+   .paesi, .immagine{
+      margin-bottom: 5%;
    }
 
 }
@@ -708,11 +742,12 @@
     .card {width: 90%; margin: 5%;}
 
     /* Banner */
-    .banner h3, .banner1 h3 {font-size: 22px;}
-    .banner p, .banner1 p {font-size: 16px; line-height: 1.2;}
-    .banner img, .banner1 img {border-radius: 20px;}
+    .banner h3, .banner1 h3, .banner2 h3 {font-size: 22px;}
+    .banner p, .banner1 p, .banner2 p {font-size: 16px; line-height: 1.2;}
+    .banner img, .banner1 img, .banner2 img {border-radius: 20px;}
     .banner__copy {margin-left: -30px;}
     .banner1__copy {margin-left: -30px;}
+    .banner2__copy {margin-left: -30px;}
 
     .banner__cs1 img, .banner__cs2 img, .banner__cs3 img {margin-bottom: 5px;}
     .banner__cs1 .banner__copy, .banner__cs2 .banner__copy, .banner__cs3 .banner__copy {padding: 0; padding-top: 10px; margin-left: -30px;}
